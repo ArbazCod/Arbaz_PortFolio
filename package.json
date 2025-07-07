@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "main": "app.js",
   "type": "commonjs",
-  "scripts": {
-  "start": "node app.js",
-  "build": "npm install --legacy-peer-deps",
+"scripts": {
+  "start": "npm install --legacy-peer-deps && node app.js",
   "test": "echo \"Error: no test specified\" && exit 1"
-},
+}
+,
   "engines": {
     "node": "18.x"
   },
