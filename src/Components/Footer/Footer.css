@@ -1,0 +1,226 @@
+.Footer {
+  width: 100%;
+  padding: 30px 8% 20px;
+  /* background-color removed */
+  background: transparent; /* OR use your preferred background like black or gradient */
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+}
+
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Reduced gap */
+  margin-bottom: 20px; /* Reduced margin */
+}
+
+.footer-top-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Reduced gap */
+}
+
+.footer-top-left img {
+  width: 140px; /* Smaller logo */
+  height: auto;
+}
+
+.footer-top-left p {
+  color: #555;
+  font-size: 14px; /* Smaller font */
+  font-weight: 500;
+  margin: 0; /* Remove default margin */
+}
+
+.footer-top-right {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Reduced gap */
+}
+
+.footer-email-input {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Reduced gap */
+  padding: 8px 15px; /* Reduced padding */
+  background: white;
+  border-radius: 50px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05); /* Lighter shadow */
+}
+
+.footer-email-input img {
+  width: 16px; /* Smaller icon */
+  height: 16px;
+  opacity: 0.7;
+}
+
+.footer-email-input input {
+  border: none;
+  outline: none;
+  font-size: 13px; /* Smaller font */
+  width: 160px; /* Narrower input */
+  background: transparent;
+}
+
+.footer-subscribe {
+  padding: 8px 20px; /* More compact */
+  background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+  color: white;
+  border-radius: 50px;
+  font-size: 13px; /* Smaller text */
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s; /* Faster transition */
+}
+
+.footer-subscribe:hover {
+  transform: scale(1.03); /* More subtle hover */
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 15px 0; /* Reduced margin */
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px; /* Reduced gap */
+  padding-top: 15px; /* Reduced padding */
+}
+
+.footer-bottom-left {
+  color: #777;
+  font-size: 12px; /* Smaller text */
+  margin: 0;
+}
+
+.footer-bottom-right {
+  display: flex;
+  gap: 15px; /* Reduced gap */
+}
+
+.footer-bottom-right p {
+  color: #555;
+  font-size: 13px; /* Smaller text */
+  font-weight: 500;
+  margin: 0;
+  cursor: pointer;
+  transition: color 0.2s; /* Faster transition */
+}
+
+.footer-bottom-right p:hover {
+  color: #B415FF;
+}
+
+.footer-link {
+  color: #555;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0;
+  cursor: pointer;
+  transition: color 0.2s, text-decoration 0.2s;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #B415FF;
+  text-decoration: underline;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Footer {
+    padding: 30px 5% 20px;
+    margin: 0;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .footer-top-right {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .footer-email-input {
+     border: none;
+  outline: none;
+  font-size: 13px;
+  background: transparent;
+  min-width: 120px;
+  max-width: 100%;
+  flex: 1;
+  }
+
+  .footer-email-input input {
+    border: none;
+  outline: none;
+  font-size: 13px;
+  background: transparent;
+  min-width: 120px;
+  max-width: 100%;
+  flex: 1;
+  }
+
+  .footer-subscribe {
+    width: 120px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-bottom-left {
+    font-size: 12px;
+  }
+
+  .footer-bottom-right {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer-bottom-right p {
+    font-size: 14px;
+  }
+
+  .naukri-logo {
+    width: 80px;
+    margin-top: 8px;
+  }
+
+  .naukri-link {
+    justify-content: center;
+  }
+
+  .footer-bottom-right {
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-link {
+  font-size: 14px;
+  text-align: center;
+}
+
+}
+

@@ -1,0 +1,152 @@
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+  padding-top: 50px; /* Added for better spacing */
+}
+
+.hero img {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: -30px;
+  border: 3px solid #2a2a2a; /* Added border for better visual */
+}
+
+.hero h1 {
+  text-align: center;
+  width: 70%;
+  font-size: 90px;
+  font-weight: 600;
+  margin: 0; /* Remove default margins */
+}
+
+.hero h1 span {
+  background: linear-gradient(270deg, #DF8908 10%, #B41B55 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  width: 50%;
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+  margin: 0; /* Remove default margins */
+  color: black; /* Slightly lighter color for better readability */
+}
+
+.hero-action {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.hero-button {
+  padding: 25px 75px;
+  border-radius: 50px;
+  border: 2px solid #FFF;
+  cursor: pointer;
+  color: white; /* Ensure text color is white */
+  background: transparent; /* Explicit transparent background */
+  text-decoration: none; /* For consistency */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.hero-connect:hover {
+  transform: scale(1.05);
+}
+
+
+
+.hero-resume:hover {
+  background: white;
+  color: black;
+}
+
+.hero-connect {
+ padding: 25px 55px;
+  border-radius: 50px;
+  background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+  cursor: pointer;
+  color: white;
+  border: none;
+  text-decoration: none; /* Added for anchor links */
+  transition: transform 0.3s ease; /* Smoother transition */
+}
+
+
+
+/* Enhanced Media Queries */
+@media (max-width: 1200px) {
+  .hero h1 {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero img {
+    margin-top: 100px;
+    width: 220px;
+    height: 220px;
+  }
+
+  .hero h1 {
+    margin-top: 40px;
+    font-size: 42px;
+    width: 90%;
+    text-align: center;
+  }
+
+  .hero p {
+    width: 85%;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 15px auto;
+    text-align: center;
+  }
+
+  .hero-action {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+
+  .hero-connect,
+  .hero-resume {
+    padding: 14px 25px;
+    font-size: 16px;
+    border-radius: 30px;
+    width: 70%;
+    max-width: 250px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    width: 90%;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .hero-connect,
+  .hero-resume {
+    padding: 12px 20px;
+    font-size: 15px;
+    width: 85%;
+    max-width: 150px;
+  }
+}
