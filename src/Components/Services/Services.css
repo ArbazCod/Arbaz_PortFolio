@@ -1,0 +1,141 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 80px 100px;
+  background-color: transparent; 
+  padding: 40px 0;
+}
+
+.services-title {
+  position: relative;
+  margin-top: -40px;
+}
+
+.services-title h1 {
+  padding: 0 30px;
+  font-size: 64px;
+  font-weight: 600;
+  color: #1a1a1a; 
+}
+
+.services-title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+/* Cards Container - 3 columns on desktop */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Ensures 3 divs in a row */
+  gap: 30px;
+  margin-bottom: 60px;
+  width: 100%; /* Takes full width */
+}
+
+.services-format {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1.5px solid #ccc;
+  background-color: #fff9f0;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+/* Merged hover effect */
+.services-format:hover {
+  transform: translateY(-8px) scale(1.02); /* Combined transforms */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  border: 2px solid #B415FF;
+  background-image: linear-gradient(45deg, #3f0028, #582300);
+}
+
+.services-format h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.services-format h2 {
+  font-size: 28px;
+  font-weight: 700;
+  background: linear-gradient(270deg, #DF8908 50%, #B415FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.services-format p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #4d4d4d;
+  max-width: 260px;
+}
+
+.services-readmore {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 12px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .services {
+    margin: 20px 30px; /* Tighter side margins */
+    gap: 30px;
+    padding: 20px 0; /* Reduced padding */
+  }
+
+  .services-title h1 {
+    font-size: 42px; /* Slightly smaller for mobile */
+    padding: 0;
+  }
+
+  .services-title img {
+    width: 110px; /* Smaller decoration */
+    right: -10px; /* Better positioning */
+  }
+
+  /* 2-column grid for mobile */
+  .services-container {
+    grid-template-columns: repeat(2, 1fr); /* Explicit 2 columns */
+  
+  }
+
+  .services-format {
+    padding: 20px; /* Slightly less padding */
+    gap: 12px; /* Tighter spacing */
+  }
+
+  .services-format h2 {
+    font-size: 24px; /* Smaller heading */
+  }
+
+  .services-format p {
+    font-size: 16px; /* Slightly smaller text */
+    line-height: 24px;
+    max-width: 100%; /* Full width inside card */
+  }
+}
+
+/* Optional: Single column for very small screens (e.g., < 480px) */
+@media (max-width: 480px) {
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
