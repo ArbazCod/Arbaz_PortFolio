@@ -2,6 +2,7 @@
   "name": "prot-folio",
   "version": "1.0.0",
   "private": true,
+    "homepage": "https://ArbazCod.github.io/Arbaz_PortFolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
