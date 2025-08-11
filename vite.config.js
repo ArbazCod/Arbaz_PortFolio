@@ -1,8 +1,8 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/Arbaz-khan786/',
+  base: '/Arbaz_PortFolio/', // ✅ must match your repo name exactly
   plugins: [react()],
-})
+});
