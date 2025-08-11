@@ -24,14 +24,10 @@ const Hero = () => {
   Connect with Me
 </a>
 
-    <a
-  href="https://arbazkhan725.github.io/Arbaz-khan786/resume.pdf?v=2"
-  className="hero-connect"
-  target="_blank"
-  rel="noopener noreferrer"
-  download="resume.pdf"
-  aria-label="Open Arbaz Khan's Resume (PDF)"
->
+<a href="/Arbaz-khan786/resume-v2.pdf" 
+target="_blank" rel="noopener noreferrer" 
+className="hero-connect" 
+aria-label="Open Arbaz Khan's Resume (PDF)">
   My Resume
 </a>
 
