@@ -3,7 +3,6 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://Arbazkhan725.github.io/Arbaz_PortFolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -12,9 +11,12 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "build": "^0.1.4",
+    "npm": "^11.5.2",
     "react": "^18.2.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "run": "^1.5.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.0",
